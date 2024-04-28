@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="flex bg-gray-300 flex-col items-center">
+    <form id="form" class="m-[3vh]">
+      <input
+        id="input"
+        type="text"
+        placeholder="Enter city"
+        class="p-[1vh] text-[2vh] font-bold border-[0.2vh] border-gray-400 rounded-[1vh] m-[1vh] w-[25vh]" />
+      <button
+        type="submit"
+        class="py-[1vh] hover:bg-green-700 px-[2vh] bg-green-600 text-[2vh] text-white rounded-[1vh]">
+        Get weather
+      </button>
+    </form>
+    <div
+      id="card"
+      class="bg-gradient-to-b from-blue-300 to-orange-300 p-[5vh] shadow shadow-gray-500 flex-col items-center hidden">
+      <h1 id="cityDisplay" class="text-[5vh]"></h1>
+      <p id="tempDisplay" class="text-[4vh]"></p>
+      <p id="humidityDisplay" class="text-[2vh]"></p>
+      <p id="descDisplay" class="text-[2.5vh]"></p>
+      <p id="emojiDisplay" class="text-[10vh]"></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
